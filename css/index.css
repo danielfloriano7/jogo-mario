@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    background-image: url('../images/tijolo3.png'); 
+    background-repeat: repeat;
+    
+}
+
+header {
+    background-color: #442314d2;
+    box-shadow: 
+    0px 10px 7px #442314c4;
+    text-align: center;
+}
+
+header > img {
+    margin: 30px 0;
+    filter: drop-shadow(4px 4px 2px );
+}
+
+main{
+    background-color: #ddd;
+    width: 87vw;
+    height: 87vh;
+    margin: auto;
+    text-align: center;
+}
+
+a {
+    
+}
+
+.tela {
+    width: 95.2%;
+    height: 91%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 15px;
+    text-align: center;
+}
