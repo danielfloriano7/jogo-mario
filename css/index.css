@@ -30,14 +30,10 @@ main{
     text-align: center;
 }
 
-a {
-    
-}
-
 .tela {
     width: 95.2%;
     height: 91%;
     background-color: rgb(255, 255, 255);
-    margin-top: 15px;
+    margin-top: 30px;
     text-align: center;
 }
