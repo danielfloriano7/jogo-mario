@@ -2,6 +2,7 @@ const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe')
 const clouds1 = document.querySelector('.clouds1')
 const clouds2 = document.querySelector('.clouds2')
+const reset = document.querySelector('.setReset')
 
 const jump = () => {
     mario.classList.add('jump');
@@ -39,6 +40,9 @@ var loop = setInterval(() => {
         clouds2.style.left = `${clouds2Pause}px`
 
         clearInterval(loop)
+
+        reset.innerHTML = "<a class='reset' href='jogo-mario.html'>RESET</a>"
+
     }
 }, 10);
 

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .game-board {
@@ -12,13 +13,13 @@
     position: relative;
     overflow: hidden;
 
-    background: linear-gradient(#87ceeb, #e0f6ff);
+    background: linear-gradient(#00C2EE, #7EDEF4);
 }
 .pipe {
     position: absolute;
     bottom: 0;
     width: 80px;
-  
+    
     animation: pipe-animation 1400ms infinite linear;
 }
 
@@ -38,17 +39,21 @@
     position: absolute;
     width: 1000px;
     animation: clouds-animation 20s infinite linear;
+    
 }
 
 .clouds2 {
     top: 1%;
-    right: 100%;
+    right: 110%;
     position: absolute;
     width: 1100px;
     animation:  clouds-animation 25s infinite linear;
     animation-delay: 5s;
 }
 
+.clouds1, .clouds2, .pipe, .mario {
+    filter: drop-shadow(4px 4px 3px #00000063);
+}
 
 @keyframes pipe-animation {
     from {
@@ -82,4 +87,30 @@
     to {
         right: 100%;
     }
+}
+
+.reset {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%);
+    padding: 20px;
+    border-radius: 30px;
+    font-weight: bolder;
+
+    font-size: x-large;
+    text-decoration: none;
+    background-color: #FDD304;
+    color: white;
+    outline: 1px solid white;
+    box-shadow: 0 0 7px #0000007e;
+    text-shadow: 0 0 2px black;
+
+}
+
+.reset:hover {
+    background-color: #e9c303;
+    color: white;
+    outline: 1px solid white;
 }
