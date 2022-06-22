@@ -63,6 +63,6 @@ var loop = setInterval(() => {
         reset.innerHTML = "<a class='reset' href='jogo-mario.html'>RESET</a>"
 
     }
-}, 10);
+}, 15);
 
 document.addEventListener('keydown', jump);
