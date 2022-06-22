@@ -27,7 +27,7 @@ var loop = setInterval(() => {
 
   
 
-    if (pipePosition <= 2 && pipePosition >= -5 ) {
+    if (pipePosition <= 2 && pipePosition >= -6 ) {
 
         numScore++
 
