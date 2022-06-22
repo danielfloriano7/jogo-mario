@@ -114,3 +114,23 @@
     color: white;
     outline: 1px solid white;
 }
+
+.score {
+    position: absolute;
+    display: block;
+    
+    top: 2%;
+    left: 1%;
+    padding: 20px;
+    border-radius: 30px;
+    font-weight: bolder;
+
+    font-size: x-large;
+    text-decoration: none;
+    background-color: #FDD304;
+    color: white;
+    outline: 1px solid white;
+    box-shadow: 0 0 7px #0000007e;
+    text-shadow: 0 0 2px black;
+
+}

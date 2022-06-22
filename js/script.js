@@ -3,6 +3,9 @@ const pipe = document.querySelector('.pipe')
 const clouds1 = document.querySelector('.clouds1')
 const clouds2 = document.querySelector('.clouds2')
 const reset = document.querySelector('.setReset')
+const score = document.querySelector('.score') 
+var numScore = 0
+
 
 const jump = () => {
     mario.classList.add('jump');
@@ -10,13 +13,29 @@ const jump = () => {
     setTimeout(() => {
 
         mario.classList.remove('jump')
-    }, 500);
+    }, 550);
 }
+
 
 var loop = setInterval(() => {
     
     var pipePosition = pipe.offsetLeft;
     var marioPosition = +window.getComputedStyle(mario).bottom.replace('px','');
+
+
+    console.log(pipePosition)
+
+  
+
+    if (pipePosition <= 0 && pipePosition >= -5 ) {
+
+        numScore++
+
+        score.innerHTML = `SCORE: <span>${numScore}</span>`
+
+    } ;      
+
+    marioPosition
 
     var clouds1Pause = clouds1.offsetLeft;
     var clouds2Pause = clouds2.offsetLeft;
